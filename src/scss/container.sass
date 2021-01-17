@@ -3,14 +3,13 @@ $mq-medium: 768px
 $mq-large: 992px
 $mq-ex-large: 1200px
 
-    
 $space-s: 28px
 $space-m: 40px
 $space-l: 60px
 $space-xl: 96px
 $space-xxl: 100px
 
-%center 
+%center
     max-width: 100%
     margin: 0 auto
 
@@ -18,13 +17,13 @@ $space-xxl: 100px
     padding: 0 4px
     @extend %center
     +mq-sm ()
-        max-width: $mq-small - 8px 
+        max-width: $mq-small - 8px
     +mq-md ()
-        max-width: $mq-medium - 8px 
+        max-width: $mq-medium - 8px
     +mq-lg ()
-        max-width: $mq-large - 8px 
+        max-width: $mq-large - 8px
     +mq-xl ()
-        max-width: $mq-ex-large - 8px 
+        max-width: $mq-ex-large - 8px
     &--
         &space_top_m
             padding-top: 40px
@@ -38,11 +37,7 @@ $space-xxl: 100px
             display: flex
             justify-content: center
             align-items: center
-            width: 100%
-            height: 100vh
-   
-    
-
-
-            
-           
+            height: 100%
+            padding: 60px 0
+            +mq-md ()
+                height: 100vh
