@@ -1,0 +1,88 @@
+//fonts
+
+$font-size-1: 52px
+$font-size-2: 32px
+$font-size-3: 28px
+$font-size-4: 20px
+$font-size-5: 16px
+$font-size-6: 14px
+
+//colors
+
+$color-white: white
+$color-black: black
+$color-light-grey: #cccccc
+$color-grey:  #4d4e53
+$color-blue: #12c1fc
+$color-orange: #fdd687
+$color-aqua: #0ed9e6
+$color-red: #be3144
+//align
+$start: start
+$center: center
+$end: end  
+
+//line height
+
+   $line-height-1: 1.5     
+.caption
+
+    &--
+        &size_1
+            font-size: $font-size-1
+        &size_2
+            font-size: $font-size-2
+        &size_3
+            font-size: $font-size-3
+        &size_4
+            font-size: $font-size-4
+        &size_5
+            font-size: $font-size-5
+        &size_6
+            font-size: $font-size-6
+
+        &color_white
+            color: $color-white
+        &color_black
+            color: $color-black
+        &color_grey
+            color: $color-grey
+        &color_light_grey
+            color: $color-light-grey
+        &color_blue
+            color: $color-blue
+        &color_orange
+            color: $color-orange
+        &color_aqua
+            color: $color-aqua
+        &color_red
+            color: $color-red
+        &align_center
+            text-align: $center
+            +mq-adaptive-till ()
+                text-align: $center
+
+        &align_end
+            text-align: $end
+            +mq-adaptive ()
+                text-align: $end
+
+        &align_start
+            text-align: $start
+
+        &line_height_1
+            line-height: 1.5
+        &italic
+            font-style: italic
+        &uppercase
+            text-transform: uppercase
+        &underline
+            text-decoration: underline
+        &bolder
+            font-weight: 500
+        &bold
+            font-weight: 700
+        &thin
+            font-weight: 200
+        &family_raleway
+            font-family: 'Raleway', sans-serif

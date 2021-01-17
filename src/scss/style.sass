@@ -1,0 +1,81 @@
+@import "nullstyle.scss", "media/index.sass", "section.sass", "menu.sass", "columns.sass", "container.sass", "flex.sass", "caption.sass", "buttons.sass"
+
+$space-1: 4px
+$space-2: 10px
+$space-3: 16px
+$space-4: 20px
+$space-5: 28px
+$space-6: 44px
+
+body
+    font-family: 'Poppins', sans-serif
+
+header
+    position: fixed
+    top: 0
+    left: 0
+    z-index: 100
+    width: 100%
+
+.card
+    &--
+        &underline
+            border-bottom: 2px solid #fff
+            max-width: 600px
+            margin: 0 auto
+        &shadow
+            box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5)
+            max-width: 400px
+            margin: 0 auto
+
+            .card__panel--bg_grey
+                span
+                    opacity: 0
+                    transition: .5s
+                    color: orange
+            &:hover
+                .card__panel--bg_grey
+                    span
+                        opacity: 1
+                        transition: .5s
+
+        &space_bottom
+            &_l
+                margin-bottom: 40px
+    &__
+        &panel
+            &--
+                &bg_grey
+                    background: #303841
+                    padding: 20px 0
+        &contact
+            padding: 12px
+            transition: .5s
+
+            &:hover
+                transition: .5s
+                transform: scale(1.2)
+.avatar
+    margin: 0 auto
+    max-width: 280px
+.aspect-ratio
+    padding-bottom: 75%
+    position: relative
+    &--round
+        padding-bottom: 100%
+        border-radius: 50%
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5)
+        overflow: hidden
+        border: 4px solid  #be3144
+
+    &__body
+        position: absolute
+        object-fit: cover
+        height: 100%
+
+//---------icons-----------------
+
+.icon
+    color: white
+    font-size: 24px
+    margin-right: 8px
